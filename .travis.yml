@@ -1,0 +1,10 @@
+language: python
+python:
+  "3.6.7"
+install:
+  -pip install -r requirements.txt
+deploy:
+  provider: heroku
+  api_key:
+    secure: bdOn66mA3/jdXfLi1ue5sV2mab4LwdtT5dLmYsHZvDNmoOkLEXpVnMqTJOtaJUOkKnziGxEKa1L8pppau8aIuZf09C8pCXyDaYZt4jus8L+h/AlSXXUfrfsTstBVotZi5hxe9p9pkAmU4lHz51wuqjzATCF/ZnwlENEVej03OB2pa2sW9G8XCCvUvK/oE2ihSkRko/3iLoo6fNwMWL2geaHuVFR8OloJFzvXNSXIsSdrwvJr6SkHm5/gEepz9lj0sRMyMSFQjiIqYauhv9zlKRgHUPANQC1ATyOfFelCcB4MXf8cx0s7mGC0fgXnMaWEKKDrRoshgW5iowaJqj+3KxVDV0mnoX8fdo6xNCJiwCstHaIqBqE39DYgKnA39s+sST/kT5yDXRM/JKEUT9EhS3DA/qVwf6IjJIV+CAtz/HW7IR4o2s74x8sMPGeb0c8BW6A8VYMVyPM8RiTQEn+aFkfYI/36Z/uq0kEHAGbGxgv0SiNwNzLinF46+jzMvKSxWmnFmQQyjHLujsO11z5jkRoM5w5VdrD0bkvqPO/VOCPbDjD9bSXsY6i71GyVMEF6J466oe3Kq1P43ARhY+R+bn5xZwvRJ7P9vgcZyscEnUC4qS0gEG4vY4l7k7zq4JFgpvIfHK8zhl15hWsG37FVW7ogBfoZZ/iNdZ8GWVKrSFE=
+  app: lab11111
