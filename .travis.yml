@@ -6,7 +6,6 @@ install:
   - pip install -q Django==$DJANGO_VERSION
 env:
   - DJANGO_VERSION=2.2.7
-script: pytest
 deploy:
   provider: heroku
   api_key:
