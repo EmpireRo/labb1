@@ -1,16 +1,14 @@
 language: python
-python:
-  "3.6.7"
+python: 3.6.7
 install:
-  - pip install -r requirements.txt
-  - pip install -q Django==$DJANGO_VERSION
-  - python setup.py -q install
+- pip install -r requirements.txt
+- pip install -q Django==$DJANGO_VERSION
 env:
-  - DJANGO_VERSION=2.2.7
+- DJANGO_VERSION=2.2.7
 script:
-  - pytest
+- pytest
 deploy:
   provider: heroku
   api_key:
-    secure: mJt0kCgBrj4jutiehEuy+ZPjTYmhGxojJE9fl00RvzsK4Omh2adRy13/+ZTta5fKQ5fLXmWhEQmSBes77IeIg3XEaOmqRVgx9z+lz/9GeTlVZdWYhNsG7Ie36LClv475zQFytoeJrapch86mZn0pcCcjFJYYASmhpe2SZz7cINDDYTiHy2zLnhJu1U9I7jEfBnXh8jWrhxt1Bk15peM51Jq0lFiCTTCzTFghpmvwzWsYBpb+1G61lumFtEHPPS6FMwr/ckdjc5VIea2CkI4oNjiYmdJFEyBwGzEKc0bMN83yeNpmAXvegWcLM27+sQdH96vgSDCi16mhvB/qo7aUOaX5D8kTBp0KMUq+WOt20vKuT1iQ5I1Ltn1DDRoU70CINvzO7DkSvWcBImhkAqHvyz6hcLfSviSjyX8bLfJETaUsg5/swVbjFDSLPY8DqpHvWvXuWsUL8QJBNSBsSCGKjavx7Q6gcnYKR/poP768I+Fc4baoi4Epvnj+bVKsl/ydddgKbTgoX0GjgZJSB5UIC04p37j8ozLU/3ohyyGHTh/Yq980MARl9iD1LlX8GLUP2W4zY7MNavRhxFxAbIuFsBFJFsFULWz0HBCa2RWWs88LqHAwfew/7yJkvBgx23+Jf9gZxdaOsprn1aLRH8WMAn1/nHdo2+l/8rsgUK6bb7s=
+    secure: IehdTO9ZDUDq38NYZFvi8NNjozjXKPGNavMYI4GpZwFk7HQn9yqOR3VEMhtZ02b8tG8RGYecHhqbU5DVh+F9SLdHVech7yLsSdq86v1XYEg9uB+F8fLqxyODHwvxfYbX+PZwSZHzJNMUm1JkAabynKp6rs0KPNCv1vnb7avrAIWWerJIbYmnSFNIyb6ENugVoSgWYVnVVnxyYvSKB4sDVypLY04X04WDsYXiFqWSSUNiF/3rs/p35rPZ9NKPx9mgCq0uLgqrO4CZSdRHpfq4AH24z2sLIYtDGd6JxziKBtwzCJYwLXdAOvKHGqLzoXaqYg52zfPmveKTWEoZkJ9F2BsxAk5DO0lZCCiWCBgdq0WNFRIgcjdO2mtlnSbN4MMuJR9Po/zsiph2nwxfKJWP4RVYMcmN6zA/G0z8ogddnzM9Uel5UXRqMw+eFipFmrzh4VS+E8NSAmUrciQ1dV62HSXSCYrckXqgIaNOBL7UQZxg9rNGUu0qPIdjQhA01RivGMTWheev+O0ESQbx3S9jCz6vL68kWdDys/GEp2M5HU0L89seDGALf0yi1mv39ZqFWXwI2uTUPY9ttpWVV/0ehc+zNMNZXjYlnXJomrik7Q1/9MwcAt/TEhDVaFSDbGPLtilp3QbCAPHwKAEw7paLE8Ch9DT+BV7fWa4EYqRaVfU=
   app: lab11111
